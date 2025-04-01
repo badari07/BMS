@@ -14,7 +14,7 @@ import java.util.Date;
 @Setter
 @MappedSuperclass
 public class BaseModel {
-    @Id
+    @Id // primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY)// automatically generate the id, auto increment
     private Long id;
     private Date createdAt;
